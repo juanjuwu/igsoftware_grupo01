@@ -1,0 +1,31 @@
+2022-05-17 19:32:26,035 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-17 19:34:29,512 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-05-17 19:34:29,840 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-05-17 19:34:29,842 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-05-17 19:34:29,901 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file://${project.basedir}/repo/org/springframework/ide/vscode/commons-parent/1.33.0-SNAPSHOT/maven-metadata.xml
+2022-05-17 19:34:29,906 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file://${project.basedir}/repo/org/springframework/ide/vscode/commons-parent/1.33.0-SNAPSHOT/commons-parent-1.33.0-SNAPSHOT.pom
+2022-05-17 19:34:30,877 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/linuxtools/org.eclipse.linuxtools.docker/5.6.0/org.eclipse.linuxtools.docker-5.6.0.pom
+2022-05-17 19:34:30,885 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file://${basedir}/repo/org/springframework/ide/vscode/commons-parent/1.33.0-SNAPSHOT/maven-metadata.xml
+2022-05-17 19:34:30,888 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file://${basedir}/repo/org/springframework/ide/vscode/commons-parent/1.33.0-SNAPSHOT/commons-parent-1.33.0-SNAPSHOT.pom
+2022-05-17 19:34:31,183 [Worker-24: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-05-17 19:34:32,439 [Worker-24: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ejemplo:demo:0.0.1-SNAPSHOT @ C:\Users\juanj\OneDrive\Documentos\GitHub\Proyecto prueba\demo\pom.xml.
+2022-05-17 19:34:32,875 [Worker-8: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ejemplo:demo:0.0.1-SNAPSHOT @ C:\Users\juanj\OneDrive\Documentos\GitHub\Proyecto prueba\demo\pom.xml.
+2022-05-17 19:34:33,589 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-17 19:34:33,590 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-17 19:34:33,592 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-17 19:34:33,603 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-17 19:34:33,609 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-17 19:34:33,609 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-17 19:34:33,609 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\juanj\OneDrive\Documentos\GitHub\Proyecto prueba\demo\src\test\resources
+2022-05-17 19:34:34,974 [Worker-22: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ejemplo:demo:0.0.1-SNAPSHOT @ C:\Users\juanj\OneDrive\Documentos\GitHub\Proyecto prueba\demo\pom.xml.
+2022-05-17 19:34:35,691 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-17 19:34:35,691 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-17 19:34:35,694 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-17 19:34:35,704 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-17 19:34:35,708 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-17 19:34:35,709 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-17 19:34:35,709 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\juanj\OneDrive\Documentos\GitHub\Proyecto prueba\demo\src\test\resources
+2022-05-17 19:34:53,757 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-17 19:36:00,163 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-17 19:38:17,026 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-17 19:39:35,937 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
