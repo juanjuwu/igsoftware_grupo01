@@ -1,0 +1,35 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <title>Sistema de manejo de usuarios</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <link th:href="@{/css/barralateral.css}" rel="stylesheet" href="../static/css/barralateral.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+     </head>
+<body>
+
+    <div class="Container">
+    <h1> Sistema de manejo de usuarios</h1>
+    <hr>
+    <h2>Guardar nuevo usuario</h2>
+     <form action="#" th:action="@{/guardarUsuario}" th:object="${usuario}" method="POST">
+        <input type="text" th:field="*{id}" placeholder="Rut del Colaborador" class="form-control mb-4 col-4">
+        <input type="text" th:field="*{nombre}" placeholder="Nombre del Colaborador" class="form-control mb-4 col-4">
+        <input type="text" th:field="*{apellido}" placeholder="Apellido del Colaborador" class="form-control mb-4 col-4">
+        <input type="text" th:field="*{email}" placeholder="Correo del Colaborador" class="form-control mb-4 col-4">
+        <input type="value" th:field="*{rol}" placeholder="rol del Colaborador" class="form-control mb-4 col-4">
+        <input type="value" th:field="*{idturno}" placeholder="turno del Colaborador" class="form-control mb-4 col-4" >
+        <button type="submit" class="btn btn-info col-2"> Guardar Colaborador</button>
+     </form>
+    </div>
+</body>
+</html>

@@ -2,18 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-   <title>Salas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Salas</title>
+    <link th:href="@{/css/estilos.css}" rel="stylesheet" href="../static/css/estilos.css">
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
     <link th:href="@{/css/barralateral.css}" rel="stylesheet" href="../static/css/barralateral.css">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-     </head>
-  <body className='snippet-body'>
-      
-  <body id="body-pd">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">  
+</head>
+<body className='snippet-body'>
+<body id="body-pd">
 
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
@@ -27,39 +28,59 @@
     </div>
     
     <!--Container Main start-->
-    <div class="height-100 bg-light">
+    <div class="bg-light">
  
+		<div class="container">
+  			<div class="row">
+    			<div class="col-md-4 mt-4">
+      			
+      				<div class="imagen-tipo-sala"><img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_aulas.jpg" class="img img-responsive">
+          				<div class="nombre-sala">Sala 1</div>
+          				<div class="estado-sala">Disponile</div>
+      				</div>
 
+					<div class="imagen-tipo-sala"><img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_aulas.jpg" class="img img-responsive">
+        				<div class="nombre-sala">Sala 2</div>
+        				<div class="estado-sala">Disponible</div>
+    				</div>
+
+    				<div class="imagen-tipo-sala"><img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_aulas.jpg" class="img img-responsive">
+      					<div class="nombre-sala">Sala 3</div>
+      					<div class="estado-sala">Disponible</div>
+    				</div>
+
+    				<div class="imagen-tipo-sala"><img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_aulas.jpg" class="img img-responsive">
+      					<div class="nombre-sala">Sala 4</div>
+      					<div class="estado-sala">Disponible</div>
+    				</div>
+
+    				<div class="imagen-tipo-sala"><img src="https://portafolio.co/files/article_content/uploads/2018/08/08/5b6b8d04aa070.jpeg" class="img img-responsive">
+   						<div class="nombre-sala">Gimnasio</div>
+      					<div class="estado-sala">Disponible</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
     </div>
 
-
-
-
-
-
-
-
     <!--Container Main end-->
-                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript' th:src="@{/js/barralateral.js}" src= "../static/js/barralateral.js"></script>                          
-                                <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
-                                myLink.addEventListener('click', function(e) {
-                                  e.preventDefault();
-                                });</script>
+	<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' th:src="@{/js/barralateral.js}" src= "../static/js/barralateral.js"></script>                          
+    <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+    myLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    });</script>
                             
                             
                             
                             
                             
-<div class="alert alert-success" role="alert" style = "position:absolute; left:110px; top:100px;">
-  <h4 class="alert-heading">Well done!</h4>
-  <p>En esta seccion se puede asignar una sala</p>
-  <hr>
-  <p class="mb-0">pongale</p>
-</div>              
+    
                             
-                         
-                                </body>
-                            </html>
+      
+	
+</body>
+</html>
