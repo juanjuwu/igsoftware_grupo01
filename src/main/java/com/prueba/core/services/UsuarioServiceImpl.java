@@ -1,6 +1,9 @@
 package com.prueba.core.services;
 
 import java.util.List;
+import java.util.Optional;
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,7 +24,6 @@ public class UsuarioServiceImpl implements UsuarioService {
 //		//el metodo findall basicamente retorna una lista con los usuarios al controlador
 //	}
 	@Override
-	
 	public List<UsuarioC> buscarporrol(int id_rol) {
 		//aca retornamos la lista de usuarios
 		return usuarioRepository.findByRol_id(id_rol);
@@ -32,6 +34,25 @@ public void guardarUsuario(UsuarioC usuarioC) {
 	this.usuarioRepository.save(usuarioC);
 	
 }
+@Override
+public UsuarioC obtenerUsuaruioPorID(long id) {
+	Optional<UsuarioC> optional = usuarioRepository.findById(id);
+	UsuarioC usuarioC = null;
+	if (optional.isPresent()) {
+		usuarioC = optional.get();
+	}else {
+		throw new RuntimeException("Usuario no encontrado");
+	}
+	
+	return usuarioC;
+	
+}
+@Override
+public void eliminarUsuariosPorId(long id) {
+	this.usuarioRepository.deleteById(id);
+}
+
+
 	
 
 }

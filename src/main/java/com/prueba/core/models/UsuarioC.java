@@ -5,19 +5,25 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import net.bytebuddy.implementation.ToStringMethod;
+
 
 @Entity
 @Table(name = "usuario")
+
 public class UsuarioC {
 	
 @Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column (name = "ID")
+private long id;	
+	
 @Column (name = "RUT")
-private String id;
+private String rut;
 
 @OneToOne
 @JoinColumn(name="TURNO_ID")
@@ -36,11 +42,19 @@ private String apellido;
 @Column(name ="CORREO")
 private String email;
 
-public String getId() {
+public String getRut() {
+	return rut;
+}
+
+public void setRut(String rut) {
+	this.rut = rut;
+}
+
+public long getId() {
 	return id;
 }
 
-public void setId(String id) {
+public void setId(long id) {
 	this.id = id;
 }
 
@@ -56,7 +70,7 @@ public Rol getRol() {
 	return rol;
 }
 
-public void seteRol(Rol rol) {
+public void setRol(Rol rol) {
 	this.rol = rol;
 }
 
@@ -84,8 +98,13 @@ public void setEmail(String email) {
 	this.email = email;
 }
 
-public UsuarioC(String id, Turno idturno, Rol rol, String nombre, String apellido, String email) {
-	
+public UsuarioC() {
+	super();
+}
+
+public UsuarioC(String rut, long id, Turno idturno, Rol rol, String nombre, String apellido, String email) {
+	super();
+	this.rut = rut;
 	this.id = id;
 	this.idturno = idturno;
 	this.rol = rol;
@@ -93,11 +112,6 @@ public UsuarioC(String id, Turno idturno, Rol rol, String nombre, String apellid
 	this.apellido = apellido;
 	this.email = email;
 }
-
-public UsuarioC() {
-
-}
-
 
 
 }

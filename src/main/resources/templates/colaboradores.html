@@ -53,21 +53,27 @@
                 <th>Correo</th>
                 <th>Rol</th>
                 <th>Turno</th>
+                <th>Acciones</th>
+                
             </tr>
           
         </thead>
         <tbody>
            <tr th:each="usuarios: ${listaUsuarios}">
-               <td th:text="${usuarios.id}">sdsdsd</td>
-               <td th:text="${usuarios.nombre}">sdsdsd</td>
-               <td th:text="${usuarios.apellido}">sdsdsd</td>
-               <td th:text="${usuarios.email}">sdsdsd</td>
-               <td th:text="${usuarios.rol.nombre}">sdsdsd</td>
-               <td th:text="${usuarios.idturno.turnotipo}">sdsdsd</td>
+               <td th:text="${usuarios.rut}">sdsdsd</td>
+               <td hidden="true" hth:text="${usuarios.id}">.</td>
+               <td th:text="${usuarios.nombre}">.</td>
+               <td th:text="${usuarios.apellido}">.</td>
+               <td th:text="${usuarios.email}">.</td>
+               <td th:text="${usuarios.rol.nombre}">.</td>
+               <td th:text="${usuarios.idturno.turnotipo}">.</td>  
+               <td> <a th:href="@{/muestraFormUpdate/{id}(id=${usuarios.id})}" class="btn btn-primary">Actualizar</a>
+               <a th:href="@{/eliminarUsuarios/{id}(id=${usuarios.id})}" class="btn btn-danger">Eliminar</a></td>
+           
            </tr>
         </tbody>
       
-      </table  >
+      </table>
  
 </div>
 

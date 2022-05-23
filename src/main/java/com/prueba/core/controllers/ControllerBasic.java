@@ -1,16 +1,16 @@
 package com.prueba.core.controllers;
 
 
-import java.util.ArrayList;
+
 
 import java.util.List;
-import java.util.stream.Collectors;
 
-import javax.annotation.PostConstruct;
 
 import com.prueba.core.configuration.Paginas;
-import com.prueba.core.models.Post;
+import com.prueba.core.models.Turno;
 import com.prueba.core.models.UsuarioC;
+import com.prueba.core.repository.UsuarioRepository;
+import com.prueba.core.services.TurnoService;
 import com.prueba.core.services.UsuarioService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +18,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
+
 
 
 @Controller
@@ -40,6 +39,8 @@ public class ControllerBasic {
 	
 	   @Autowired
 	     private UsuarioService usuarioservice;
+	   
+	 
 
 		//mostrando la lista de los usuarios
 	     
@@ -53,6 +54,7 @@ public class ControllerBasic {
 			return "colaboradores";
 		}
 		
+		
 		@GetMapping("/muestranuevoColaborador")
 		
 		public String muestranuevoColaborador(Model model) {
@@ -62,13 +64,34 @@ public class ControllerBasic {
 		
 			return "nuevo_usuario";
 		}
-		
+
 		@PostMapping("/guardarUsuario")
 		public String guardarUsuario(@ModelAttribute("usuario") UsuarioC usuarioC){
 			//guardar el empleado ala base de datos
+			 System.out.println("&//////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+			 
+			
 			usuarioservice.guardarUsuario(usuarioC);
+			System.out.println(usuarioC);
+			 System.out.println(usuarioC.getRut());
 			return "redirect:/";
 		
+		}
+		
+		@GetMapping("/muestraFormUpdate/{id}")
+		public String muestraFormUpdate(@PathVariable(value ="id") long id, Model model) {
+			// obtener usuarios desde el servicio
+			UsuarioC usuarioC= usuarioservice.obtenerUsuaruioPorID(id);
+			//ponemos al usuario como un atributo modelo para rellenar el formulario
+			model.addAttribute("usuario",usuarioC);
+			return "actualizar_usuario";
+			
+					}
+		@GetMapping("/eliminarUsuarios/{id}")
+		public String eliminarUsuarios(@PathVariable(value ="id") long id) {
+			// llamamos el metodo de eliminar colaboradores/usuarios 
+			this.usuarioservice.eliminarUsuariosPorId(id);
+			return "redirect:/";
 		}
 		
 		
